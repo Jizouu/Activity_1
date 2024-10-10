@@ -1,17 +1,93 @@
 * {
     margin: 0;
     padding: 0;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-  }
-  
-  body, html {
+}
+
+html, body {
     height: 100%;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(/static/images/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+.logo {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* Home */
+.tagline {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.logo-container {
+    width: 512px;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tagline h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.tagline h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
